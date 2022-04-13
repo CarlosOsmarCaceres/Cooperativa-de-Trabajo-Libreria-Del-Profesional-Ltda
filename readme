@@ -1,0 +1,4 @@
+1 npm init
+2 npm i express
+3 npm dotenv
+4 gestionar rutas desde el main con path
