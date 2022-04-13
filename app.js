@@ -3,11 +3,11 @@ const app = express();
 
 const path= require('path');
 
-
 const port = 3000;
 //Ver CLase 38 inicio 20 min
 //Ruta elementos estaticos
-app.use(express.static('./src/public'));
+app.use(express.static('./public'));
+
 app.listen(process.env.PORT || port, () => console.log(`http://localhost:${port}`))
 
 //Ruta index
