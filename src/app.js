@@ -10,10 +10,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 //Enrutadores
-const indexRouter = require("./routes/indexRouter");
+const indexRouter = require('./routes/indexRouter');
+const productsRouter = require('./routes/productsRouter');
 
-//Middlware routers
-app.use("/",indexRouter);
+/* Middlewares de Rutas */
+app.use('/', indexRouter) // HOME - Contact 
+app.use('/productos', productsRouter) // Listado, detalle
 
 
 
